@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    //Rlagem suave da página
+    //Rolagem suave da página
     const links = document.querySelectorAll('nav ul li a');
 
     links.forEach(link => {
@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Inicialize o AOS
+    // Inicializando o AOS biblioteca
     AOS.init({
-        once: false // Garante que a animação ocorra toda vez que o elemento entra na viewport
+        once: false // Para que a nimação ocorra toda vez que o elemento entra na viewport
     });
 });
