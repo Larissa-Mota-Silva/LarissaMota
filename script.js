@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    //Rlagem suave da página
     const links = document.querySelectorAll('nav ul li a');
 
     links.forEach(link => {
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    //Menu hamburguer
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
 
