@@ -23,3 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    // Inicialize o AOS
+    AOS.init({
+        once: false // Garante que a animação ocorra toda vez que o elemento entra na viewport
+    });
+});
