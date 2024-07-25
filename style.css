@@ -12,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     -webkit-animation: degrade-animado 10s infinite alternate;
+    text-align: justify;
 }
 
 /*----------- Animação do background -----------*/
@@ -117,7 +118,7 @@ section {
     padding: 1rem;
     background-color: #444;
     border-radius: 8px;
-    margin: 1rem auto 0 auto;
+    margin: 2rem auto 0 auto;
 }
 
 h2 {
@@ -199,8 +200,9 @@ footer {
         position: absolute;
         top: 60px; /* Ajuste conforme necessário */
         right: 0; /* Alinha o menu à direita */
-        background-color: #222;
+        background-image: linear-gradient(to right, #222222, #424242);
         z-index: 1000;
+        padding: 30px 0;
     }
 
     .nav.active {
@@ -225,17 +227,31 @@ footer {
         background-color: #fff;
     }
 
-    #sobre {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
     .column {
         float: none;
     }
 
     .gallery {
         flex-direction: column;
+    }
+
+    #sobre ul li{
+        padding:  0 0 0 10px;
+        width: 90%;
+        text-align: justify;
+    }
+
+    h2 {
+        border-bottom: 2px solid #555;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-family: 'Cinzel', serif;
+        text-indent: 30px;
+        font-size: 100%;
+    }
+
+    h3{
+        font-size: 90%;
     }
 }
