@@ -1,0 +1,267 @@
+/*------ Fonte importada ------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Open+Sans:wght@300&display=swap');
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #eee;
+    background-image: linear-gradient(to left, #222222, #424242, #222222);
+    background-size: 400% 100%;
+    animation: degrade-animado 10s infinite alternate;
+    margin: 0;
+    padding: 0;
+    -webkit-animation: degrade-animado 10s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    /* Animação do fundo mexendo */
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+header {
+    background-image: linear-gradient(to right, #222222, #424242);
+    padding: 1rem 0;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+}
+
+/* Estilos do botão do menu hamburguer */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    z-index: 1100; /* Para garantir que o botão esteja acima de outros elementos */
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Estilos da navegação */
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+main {
+    margin: 1rem 0;
+}
+
+section {
+    padding: 4rem 1rem;
+}
+
+.container {
+    margin: 0 1rem;
+}
+
+#sobre .container div, #contato .container div{
+    padding: 1rem;
+    background-color: #444;
+    border-radius: 8px;
+    margin: 1rem auto 0 auto;
+}
+
+h2 {
+    border-bottom: 2px solid #555;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+    text-indent: 30px;
+}
+
+.gallery {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0.5rem 0 0.5rem; /* Espaço entre as colunas */
+}
+
+.item {
+    flex: 2;
+    background-color: #444;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.item a, h3 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Para que o link ocupe uma nova linha */
+    margin-top: 0.5rem; /* Espaçamento entre imagem e link */
+    transition: color 0.3s;
+}
+
+.item a:hover, h3 a:hover {
+    color: #bababa;
+}
+
+#sobre ul li{
+    padding:  0 0 0 50px;
+    width: 80%;
+    text-align: justify;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+}
+
+form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #666;
+}
+
+footer {
+    background-image: linear-gradient(to right, #222222, #424242);
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Ajuste conforme necessário */
+        right: 0; /* Alinha o menu à direita */
+        background-color: #222;
+        z-index: 1000;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0; /* Remove o padding default */
+        margin: 0; /* Remove a margem default */
+        text-align: right; /* Alinha o texto à direita */
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-right: 1rem; /* Adiciona uma margem à direita dos itens */
+    }
+
+    .menu-toggle .bar {
+        background-color: #fff;
+    }
+
+    #sobre {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .column {
+        float: none;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+}

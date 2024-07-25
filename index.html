@@ -4,70 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Meu Nome</h1>
-            <nav>
+            <h1>Larissa Mota</h1>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav">
                 <ul>
+                    <li><a href="#contato">Contato</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#portfolio">Portfólio</a></li>
-                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="sobre">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <p>Descrição breve sobre você e suas habilidades.</p>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="container">
-            <h2>Meu Portfólio</h2>
-            <div class="gallery">
-                <div class="item">
-                    <img src="imagem1.jpg" alt="Projeto 1">
-                    <p>Projeto 1</p>
+    <main>
+        <section id="contato">
+            <div class="container">
+                <div id>
+                    <h2>Larissa Mota da Silva</h2>
+                    <ul>
+                        <H3>contato.larissamotasilva@gmail.com</H3>
+                        <H3>(11) 98881-8973</H3>
+                        <h3><a href=httHps://www.linkedin.com/in/larissa-mota-a3075b248" target="_blank" rel="noopener noreferrer">linkedin</a></h3>
+                        <h3><a href=httHps://github.com/Larissa-Mota-Silva" target="_blank" rel="noopener noreferrer">Github</a></h3>
+                    </ul>
                 </div>
-                <div class="item">
-                    <img src="imagem2.jpg" alt="Projeto 2">
-                    <p>Projeto 2</p>
-                </div>
-                <!-- Adicione mais itens conforme necessário -->
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="sobre">
+            <div class="container">
+                <div>
+                    <h2>FORMAÇÃO ACADÊMICA</h2>
+                    <ul>
+                        <li>Técnico em informática para a internet integrado ao ensino médio no
+                            Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - IFSP (02/2020 - 12/2023)</li>
+                        <li>Cursando Faculdade de análise e desenvolvimento de sistema na
+                            Faculdade de Tecnologia de Guarulhos - Fatec Guarulhos (02/2024 até 12/2026)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>CERTIFICAÇÕES</h2>
+                    <ul>
+                        <li>Google UX Design (2023) - Coursera x Google</li>
+                        <li>Bootcamp Nexa - Fundamentos de IA Generativa e Claude 3</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>RESUMO DAS QUALIFICAÇÕES</h2>
+                    <ul>
+                        <li>Estudante de Análise e Desenvolvimento de Sistemas na Fatec Guarulhos, com
+                            aprendizados em programação fullstack e sistemas Linux. Meu caminho na programação
+                            começou com PHP e SQL, explorando as bases do desenvolvimento. Agora, concentro meus
+                            esforços no aprimoramento das habilidades em desenvolvimento web, com especial
+                            atenção ao jQuery e aprimoramento em meu front-end. Com uma base técnica sólida do
+                            curso técnico em Informática para Internet no Instituto Federal, busco oportunidades para
+                            aplicar e expandir meu conhecimento em ambientes desafiadores de desenvolvimento.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>EXPERIÊNCIA PROFISSIONAL</h2>
+                    <ul>
+                        <p>Embora eu esteja em busca do meu primeiro emprego formal, minha jornada até agora
+                            tem sido marcada por uma dedicação incansável ao aprendizado e à prática autodidata.
+                            Durante meus estudos:</p>
+                        <li>Desenvolvi em trabalhos escolares um site para uma rede de postos de saúde,
+                            aplicando CRUD simples e desenvolvendo minhas habilidades em design
+                        </li>
+                        <li>Além disso, também tive meu Trabalho de Conclusão de Curso (TCC) onde desenvolvi
+                            um site profissional para um cliente real no segmento de ateliê de roupas,
+                            demonstrando minha capacidade de atender às necessidades específicas dos clientes e
+                            consolidando minhas habilidades práticas em desenvolvimento web.</li>
+                        <li>E atualmente busco continuar meus aprendizados em projetos próprios</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Tecnologias</h2>
+                    <ul>
+                        <li>HTML, CSS, MarkDown <br>
+                            PHP, JavaScript, JQuery, Ajax, JAVA, C, C++<br>
+                            MySQL,<br>
+                            Linux, Windows</li>
+                    </ul>
+                    <h2>Idiomas</h2>
+                    <ul>
+                        <li>Inglês intermediário</li>
+                        <li>Espanhol básico</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <section id="contato">
-        <div class="container">
-            <h2>Contato</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
+        <section id="portfolio">
+            <div class="container">
+                <h2>Meu Portfólio</h2>
+                <div class="gallery">
+                    <div class="item">
+                        <img src="imgs/meraki.png" alt="Projeto 1">
+                        <a href="https://meraki.talentosdoifsp.gru.br/" target="_blank" rel="noopener noreferrer">Meraki</a>
+                    </div>
+                    <div class="item">
+                        <img src="imgs/aesthete.png" alt="Projeto 2">
+                        <a href="https://docs.google.com/presentation/d/189CKTCXtj3YSgeAhmfFAcc8IpVfwO479aFJtM_4u_oY/edit" target="_blank" rel="noopener noreferrer">Aesthete Floricultura</a>
+                    </div>
+                    <div class="item">
+                        <img src="imgs/vbatelie.png" alt="Projeto 3">
+                        <a href="https://www.instagram.com/vbatelie.oficial/" target="_blank" rel="noopener noreferrer">VB Ateliê</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Meu Nome. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Larissa Mota. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <script src="../js/scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
